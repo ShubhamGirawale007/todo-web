@@ -30,5 +30,4 @@ It allows users to manage daily tasks in the browser, with data stored using `lo
 ## 📁 Folder Structure
 
 =======
-# [Personal-Todo](https://personal-todo-web.vercel.app/)
->>>>>>> 6448217ca9b4f34076de2b27cffa891ed709b143
+
