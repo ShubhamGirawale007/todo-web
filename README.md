@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Personal To-Do Web App 📝
 
 This is a simple and responsive **To-Do List Web App** created using HTML, CSS, and JavaScript.  
