@@ -25,7 +25,7 @@ border: none;
 
 .grid-container{
   display: grid;
-  grid-template-columns: 300px 250px 50px auto;
+  grid-template-columns: 2fr 2fr auto auto;
   gap: 10px;
   row-gap:10px;
   margin-top: 10px;
@@ -59,8 +59,11 @@ border: none;
   height: 40px;
 }
 @media (max-width: 768px) {
-  .grid-container, .todo-container {
-    grid-template-columns: repeat(2, 1fr); /* Tablet - 2 per row */
+  .grid-container {
+    grid-template-columns: repeat(1fr, 1fr);
+  }
+  .todo-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -69,6 +72,6 @@ border: none;
     grid-template-columns: 1fr;
   }
   .grid-container {
-    grid-template-columns: repeat(1, 1fr); /* Mobile - 1 per row */
+    grid-template-columns:1fr; 
   }
 }
