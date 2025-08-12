@@ -1,4 +1,4 @@
-let todoList = [
+let todoList = JSON.parse(localStorage.getItem('todoList')) || [
   {
     item:'buy milk',
     dueDate: '4/10'
@@ -46,8 +46,7 @@ function displayItems(){
     <span>${item}</span> 
     <span>${dueDate}</span>
 
-    <button id="delete-btn" onclick = "todoList.splice(${i},1); displayItems();">Delete</button>
-    
+   <button id="delete-btn" onclick="deleteTodo(${i})">Delete</button>
     `;  
   }
   containerElement.innerHTML = newHtml;
@@ -56,4 +55,5 @@ function deleteTodo(index) {
     todoList.splice(index, 1);
     localStorage.setItem('todoList', JSON.stringify(todoList));
     displayItems();
+
 }
