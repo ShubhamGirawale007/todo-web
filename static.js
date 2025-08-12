@@ -20,6 +20,12 @@ function addTodo(){
   let tododate = dateElement.value;
 
   todoList.push({item:todoItem,dueDate:tododate});
+if (todoItem.trim() === '' || tododate === '') {
+  alert('Please enter a task and date!');
+  return;
+}
+
+
   localStorage.setItem('todoList',JSON.stringify(todoList));
 
   let storeTodo=JSON.parse(localStorage.getItem('todoList'));
